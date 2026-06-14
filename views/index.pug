@@ -1,0 +1,13 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title Movie Collection
+    a(href="/update") Update Pride & Prejudice Rating
+    br
+    a(href="/delete") Delete R Rated Movies
+    each movie in movies 
+        h2 #{movie.title}
+        div Year: #{movie.year} 
+        div Rating: #{movie.rating} 
+        hr
