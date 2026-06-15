@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./index.js"
-  },
-  "author": "Joanna K",
+  "start": "node ./index.js",
+  "dev": "nodemon ./index.js"
+},
+  "author": "Ida",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.6.1",

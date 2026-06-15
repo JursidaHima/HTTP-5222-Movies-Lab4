@@ -6,7 +6,9 @@ block layout-content
     a(href="/update") Update Pride & Prejudice Rating
     br
     a(href="/delete") Delete R Rated Movies
+    br
     each movie in movies 
+      .movie-card 
         h2 #{movie.title}
         div Year: #{movie.year} 
         div Rating: #{movie.rating} 

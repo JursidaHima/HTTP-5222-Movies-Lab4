@@ -29,7 +29,7 @@ app.get("/", async (request, response) => {
   response.render("index", { movies: movieList });
 });
 app.get("/update", async (request, response) => {
-  await db.updateMovieRating("Pride & Prejudice", "PG-13");
+  await db.updateMovieRating("Pride & Prejudice", "R");
 
   response.redirect("/");
 });
